@@ -20,7 +20,6 @@ def createWordsDict(fileName):
 	return wordsDict
 
 def get_top_terms(wordsDict, k):
-	print sorted(wordsDict.items(), key=operator.itemgetter(1))[-int(k):][::-1]
 	return sorted(wordsDict.items(), key=operator.itemgetter(1))[-int(k):][::-1]
 	
 
