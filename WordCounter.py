@@ -4,6 +4,7 @@
 import operator
 import sys
 import re
+import porter2 as port
 
 def createWordsDict(fileName):
 	inputFile = open(fileName).read()
