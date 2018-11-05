@@ -10,6 +10,7 @@ def createWordsDict(fileName):
 	delims= r'[ "\t,;.?!\r\n]+'
 	temp = re.split(delims,inputFile)
 	for token in temp:
+		token = token.lower()
 		if token not in wordsDict:
 			wordsDict[token] = 1
 		else:
@@ -20,9 +21,10 @@ def main():
 	try:
 		fileName = sys.argv[1]
 		wordsDict = createWordsDict(fileName)
-		print wordsDict	
-	except:
-		print "Error"
+		for key, item in wordsDict.iteritems():
+			print "Key: ", key, item
+	except Exception, err:
+		print Exception, err
 
 if __name__ == '__main__':
 	main()

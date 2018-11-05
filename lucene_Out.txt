@@ -1,0 +1,8 @@
+lucene-querybuilder (0.2)    - A DSL to build Lucene text queries in Python.
+plush (0.3.0)                - Python LUcene SHell.
+pytest_exact_fixtures (0.1)  - Parse queries in Lucene and Elasticsearch syntaxes
+lucenequery (0.1)            - Parse queries in Lucene and Elasticsearch syntaxes
+luqum (0.7.5)                - A Lucene query parser generating ElasticSearch queries and more !
+plyse (1.0.2)                - A fully extensible query parser inspired on the lucene and gmail sintax
+l2cs (2.0.2)                 - Rewrites queries from lucene syntax to Amazon Cloudsearch syntax
+fold-to-ascii (1.0.1)        - A Python port of the Apache Lucene ASCII Folding Filter that converts alphabetic, numeric, and symbolic Unicode characters which are not in the first 127 ASCII characters (the ‘Basic Latin’ Unicode block) into ASCII equivalents, if they exist.
