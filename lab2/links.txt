@@ -1,0 +1,11 @@
+//Breakdown of trec_eval and uses
+http://faculty.washington.edu/levow/courses/ling573_SPR2011/hw/trec_eval_desc.htm
+
+//Explaination of Trec
+https://stackoverflow.com/questions/4275825/how-to-evaluate-a-search-retrieval-engine-using-trec-eval
+
+// Trec_eval download
+https://trec.nist.gov/trec_eval/
+
+
+^^^^^^^ trec_eval_latest.tar.gz <---- download this version
