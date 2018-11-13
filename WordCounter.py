@@ -12,7 +12,7 @@ def createWordsDict(fileName):
 	delims= r'[ "\t,;.?!\r\n]+'
 	temp = filter(None, re.split(delims,inputFile))
 	for token in temp:
-		token = token.lower()
+		token = port.stem(token.lower())
 		if token not in wordsDict and token != None:
 			wordsDict[token] = 1
 		else:
@@ -33,7 +33,7 @@ def main():
 		print "The top ", k, " terms are:\n"
 		i = 0
 		for item in wordsDict:
-			print "Rank #", k-k+i+1, " : ", port.stem(item[0]), "\n\tOccurances: ", item[1], "\n"
+			print "Rank #", k-k+i+1, " : ", item[0], "\n\tOccurances: ", item[1], "\n"
 			i+=1
 
 		print "\n---Done.\n"
