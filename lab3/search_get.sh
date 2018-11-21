@@ -4,7 +4,7 @@ if [ "$1" == "-h" ]; then
   exit 0
 fi
 
-rm -f search_get_out.csv
-wget -r "http://136.206.48.37:8084/IRModelGenerator/TrecBatchQueryExecuterServlet?treccode=$1&simf=BM25&k=$2&b=$3" > search_get_out.csv
-lineNo=cat search_get_out.csv | wc -l
-printf "Downloaded CSV. Line numbers = $lineNo" 
+rm -rf 136.206.48.37\:8084/
+wget -r "http://136.206.48.37:8084/IRModelGenerator/TrecBatchQueryExecuterServlet?treccode=$1&simf=BM25&k=$2&b=$3"
+
+mv 136* "t$1_k$2_b$3"
