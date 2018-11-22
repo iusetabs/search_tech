@@ -8,3 +8,4 @@ rm -rf 136.206.48.37\:8084/
 wget -r "http://136.206.48.37:8084/IRModelGenerator/TrecBatchQueryExecuterServlet?treccode=$1&simf=BM25&k=$2&b=$3"
 
 mv 136* "t$1_k$2_b$3"
+
